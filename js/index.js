@@ -247,10 +247,8 @@ $(document).ready(function () {
     // 点击展开公告、日志、关于
     $('a.gonggao').click(function () {
         setAlert(
-            '我们很多时候下载电脑软件需要到软件官网进行下载，\
-             但是很多国外网站存在\
-             <strong>国内无法访问</strong>或者<strong>下载速度缓慢</strong>等问题， 国内软件下载站又存在\
-             <strong>病毒风险</strong>， 本站为了解决这个问题， 无需翻墙， 即可轻松下载您需要的各种电脑软件。\
+            'SHSSEDU软件中心提拱海量免费软件安全下载，全部软件都已经过安全杀毒检测。，\
+             <strong>如果首页</strong><strong>不能下载</strong>，请在搜索框搜索后下载\
              <div style="text-align: right;">  <a href="https://shssedu.ac.cn"><strong>SHSSEDU</strong></a></div>'
         )
     })
