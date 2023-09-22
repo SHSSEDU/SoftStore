@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>SHSSEDU软件中心-海量软件高速下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="下载,免费软件,软件下载,免费下载,SHSSEDU软件中心,SHSSEDU电脑管家,PC软件中心,电脑软件中心" />
+    <meta name="description" content="SHSSEDU软件中心提拱海量免费软件安全下载，全部软件都已经过安全杀毒检测。手机、电脑客户端版应用软件大全，最新最快速的软件下载中心。" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- 自定义CSS样式 -->
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 载入自定义JavaScript脚本
+            $.getScript('js/index.js')
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container mt-4 mb-5">
+        <!-- 大标题与搜索框组件 -->
+        <div class="row">
+            <div class="col-md-7 col-lg-8">
+                <h2 class="mt-2">SHSSEDU软件中心</h2>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="input-group mt-2">
+                    <input type="text" class="form-control border-success keyword" placeholder="请输入搜索关键词">
+                    <div class="input-group-append">
+                        <button class="btn btn-success search" type="submit">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="gonggao text-danger mr-1">公告</a> · <a class="log ml-1 mr-1 text-info">开发日志</a> · <a
+            class="about ml-1 text-success">关于</a>
+        <hr />
+        <!-- 信息提示框 -->
+        <div class="alertInfo"></div>
+        <!-- 切换分类组件 -->
+        <div class="type-btns mt-2 mb-2"></div>
+        <!-- 软件列表 -->
+        <div class="row softlist"></div>
+        <!-- 加页组件 -->
+        <button class="btn btn-light btn-block btn-lg morePage mt-3">加载更多</button>
+    </div>
+    <!-- 模态框 软件详情 -->
+    <div class="modal fade" id="softInfo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">软件详情</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- 模态框主体 -->
+                <div class="loading p-3">正在加载中……</div>
+                <div class="modal-body softInfo">
+                    <div class="media p-3">
+                        <img class="mr-3 mt-3 logo" style="width:60px;">
+                        <div class="media-body">
+                            <h4>软件标题</h4>
+                            <p>软件信息</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-success btn-block download mt-1" role="button">下载安装</a>
+                    <div class="table-responsive mt-3">
+                        <table class="table">
+                            <tr class="imgs"></tr>
+                        </table>
+                    </div>
+                    <div class="softMsg mt-2"></div>
+                </div>
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
